@@ -79,6 +79,7 @@ return array(
     "Operation(s) Assigned" => "Операции назначены",
     "Operation(s) Revoked" => "Операции отозваны",
     "Operations" => "Операции",
+    "Operation" => "Операция",
     "Controller" => "Контроллер",
     "Action" => "Действие",
     "Scan" => "Сканирование",
