@@ -112,6 +112,7 @@
        );
       ?>
      </th>
+         <th><?php echo Helper::translate('srbac', 'Description') ?></th>
      <th colspan="2"><?php echo Helper::translate('srbac', 'Actions') ?></th>
    </tr>
 <?php foreach ($models as $n => $model): ?>
@@ -129,6 +130,7 @@
            ), array("title" => $model->description ? $model->description : $model->name)
          );
 ?></td>
+             <td><?php echo $model->description;?></td>
        <td><?php echo SHtml::encode(AuthItem::typeById($model->type)); ?></td>
        <td>
       <?php
