@@ -98,6 +98,7 @@ return array(
     "Delete tasks" => "Удалить задачи",
     "Can't revoke this role" => "Нельзя отозвать эту роль",
     "Managing auth items" => "Управление правилами доступа",
+    "Clear obsolete authItems" => "Очистка устаревших правил доступа",
     "Assign to users" => "Назначение прав пользователям",
     "User's assignments" => "Права пользователей",
     "Srbac frontpage" => "Начальная страница srbac",
