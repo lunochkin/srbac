@@ -15,7 +15,7 @@
  */
  ?>
 <br />
-<h1>Assignments of user : '<?php echo $username?>'</h1>
+<h1><?php echo Helper::translate('srbac','Assignments of user')?>: '<?php echo $username?>'</h1>
 <table class="srbacDataGrid" width="100%">
   <tr>
     <th class="roles"><?php echo Helper::translate('srbac','Roles')?></th>
