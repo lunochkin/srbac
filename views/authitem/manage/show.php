@@ -29,7 +29,7 @@
 <table class="srbacDataGrid">
   <tr>
     <th class="label"><?php echo SHtml::encode($model->getAttributeLabel('type')); ?></th>
-    <td><?php echo SHtml::encode(AuthItem::$TYPES[$model->type]); ?></td>
+    <td><?php echo SHtml::encode(AuthItem::typeById($model->type)); ?></td>
   </tr>
   <tr>
     <th class="label"><?php echo SHtml::encode($model->getAttributeLabel('description')); ?></th>

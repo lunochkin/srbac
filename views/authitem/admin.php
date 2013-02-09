@@ -32,7 +32,7 @@
 <?php foreach($models as $n=>$model): ?>
   <tr class="<?php echo $n%2?'even':'odd';?>">
     <td><?php echo SHtml::link($model->name,array('show','id'=>$model->name)); ?></td>
-    <td><?php echo SHtml::encode(AuthItem::$TYPES[$model->type]); ?></td>
+    <td><?php echo SHtml::encode(AuthItem::typeById($model->type)); ?></td>
     <td>
       <?php echo SHtml::link(Helper::translate('srbac','Update'),array('update','id'=>$model->name)); ?>
       <?php if ($model->name !=  Yii::app()->getModule('srbac')->superUser) { ?>

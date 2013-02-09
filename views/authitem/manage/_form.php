@@ -32,7 +32,7 @@
   </div>
   <div class="simple">
     <?php echo SHtml::activeLabelEx($model,'type'); ?>
-    <?php echo SHtml::activeDropDownList($model,'type',AuthItem::$TYPES,
+    <?php echo SHtml::activeDropDownList($model,'type',AuthItem::types(),
     $model->name == Helper::findModule('srbac')->superUser || $update
     ? array('disabled'=>"disabled"): array()); ?>
   </div>

@@ -93,7 +93,7 @@
        <th>
       <?php
        echo SHtml::dropDownList('selectedType', Yii::app()->user->getState("selectedType"),
-         AuthItem::$TYPES,
+         AuthItem::types(),
          array(
              'prompt' => Helper::translate('srbac', 'All'),
              'live' => false,
@@ -129,7 +129,7 @@
            ), array("title" => $model->description ? $model->description : $model->name)
          );
 ?></td>
-       <td><?php echo SHtml::encode(AuthItem::$TYPES[$model->type]); ?></td>
+       <td><?php echo SHtml::encode(AuthItem::typeById($model->type)); ?></td>
        <td>
       <?php
          echo SHtml::ajaxLink(
