@@ -102,6 +102,8 @@ return array(
     "Assign to users" => "Назначение прав пользователям",
     "User's assignments" => "Права пользователей",
     "Srbac frontpage" => "Начальная страница srbac",
+    "select user" => "выберите пользователя",
+    "Assignments of user" => "Права, назначенные пользователю",
 
     //Version 1.0.3
     "Module" => "Модуль",
@@ -114,7 +116,7 @@ return array(
     //Version 1.1
     "Clever Assigning" => "Умное назначение",
     "Help" => "Помощь",
-    "Edit always allowed list" => "Редактирование списка всегда разрешонных",
+    "Edit always allowed list" => "Редактирование списка всегда разрешенных",
     "The following authItems are saved in the always allowed file" =>
     "Следующие authItems сохранены в файл всегда разрешонных",
     "srbac is not configuered to use the alwaysAllowed GUI editor." =>
