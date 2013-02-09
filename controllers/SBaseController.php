@@ -24,6 +24,8 @@ Yii::import("srbac.components.Helper");
 class SBaseController extends CController
 {
 
+    public $breadcrumbs=array();
+    
     /**
      * Checks if srbac access is granted for the current user
      * @param String $action . The current action
