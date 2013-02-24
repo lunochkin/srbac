@@ -58,6 +58,8 @@ $this->widget('system.web.widgets.CTabView',
     $(".tabbable.tabs-left ul li:first a").trigger("click");
 
     $(".tabbable.tabs-left ul li a").on("click", function() {
+
+        $(".tabbable.tabs-left ul li").removeClass("active");
         $(this).closest("li").addClass("active");
     });
 </script>
