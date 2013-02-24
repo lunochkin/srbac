@@ -181,7 +181,10 @@
         'pages' => $pages,
         'prevPageLabel' => '<',
         'nextPageLabel' => '>',
-        'maxButtonCount' => 3
+        'maxButtonCount' => 3,
+        'htmlOptions' => array(
+            'class' => 'pagination',
+        ),
     ));
     ?>
 </div>
