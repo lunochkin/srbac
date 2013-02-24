@@ -21,7 +21,7 @@
   <table width="100%">
     <tr valign="top">
       <td width="40%" style="vertical-align: top">
-        <table class="srbacDataGrid" width="40%" align="left">
+        <table class="table table-bordered" width="40%" align="left">
           <tr>
             <th width="80%"><?php echo Helper::translate('srbac','Controller')?></th>
             <th colspan="2"><?php echo Helper::translate('srbac','Actions')?></th>

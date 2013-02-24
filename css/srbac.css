@@ -205,40 +205,6 @@ div.srbac div.message{
   font-weight:bold;
 }
 
-
-/* begin data grid style */
-/*table.srbacDataGrid*/
-/*{*/
-  /*background: white;*/
-  /*border-collapse: collapse;*/
-  /*width: 99%;*/
-/*}*/
-
-/*table.srbacDataGrid th, table.srbacDataGrid td*/
-/*{*/
-  /*font-size: 0.9em;*/
-  /*border: 1px #4F81BD solid;*/
-  /*padding: 0.5em;*/
-  /*text-align:left;*/
-/*}*/
-
-/*table.srbacDataGrid th*/
-/*{*/
-  /*background: #d3dfee;*/
-  /*text-align: center;*/
-/*}*/
-/**/
-/*table.srbacDataGrid th.label*/
-/*{*/
-  /*width: 150px;*/
-/*}*/
-/**/
-/*table.srbacDataGrid tr.odd*/
-/*{*/
-  /*background: #E6F2FF;*/
-/*}*/
-/* end of data grid style */
-
 div.error {
   color:red;
 }
