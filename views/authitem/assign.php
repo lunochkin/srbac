@@ -70,6 +70,11 @@ $this->breadcrumbs = array(
             $(this).closest("li").addClass("active");
         });
 
-        $("#tabsAssign ul li:first a").trigger("click");
+        setTimeout(
+                function() {
+                    $("#tabsAssign ul li:first a").trigger("click");
+                },
+                500
+        );
     });
 </script>
