@@ -16,18 +16,16 @@ foreach ($controllers as $n => $controller) {
 }
 ?>
 <?php echo SHtml::form(); ?>
-<div class="vertTab">
-    <?php
-    Helper::publishCss($this->module->css);
-    $this->widget('system.web.widgets.CTabView',
-        array(
-            'tabs' => $cont,
-            'cssFile' => $this->module->getCssUrl(),
-            'htmlOptions' => array('class' => 'tabbable tabs-left'),
-        )
-    );
-    ?>
-</div>
+<?php
+Helper::publishCss($this->module->css);
+$this->widget('system.web.widgets.CTabView',
+    array(
+        'tabs' => $cont,
+        'cssFile' => $this->module->getCssUrl(),
+        'htmlOptions' => array('class' => 'tabbable tabs-left'),
+    )
+);
+?>
 <div class="action">
     <?php echo SHtml::ajaxSubmitButton(Helper::translate("srbac", "Save"),
     array('saveAllowed'),
@@ -62,4 +60,5 @@ foreach ($controllers as $n => $controller) {
     $(".tabbable.tabs-left ul.tabs")
             .addClass("nav")
             .addClass("nav-tabs");
+    $(".tabbable.tabs-left ul.tabs").find("a").attr("data-toggle", "tab");
 </script>
