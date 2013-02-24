@@ -58,4 +58,8 @@ foreach ($controllers as $n => $controller) {
         $(".tabs").attr("style", "border-bottom:none");
 
     }
+
+    $(".tabbable.tabs-left ul.tabs")
+            .addClass("nav")
+            .addClass("nav-tabs");
 </script>
