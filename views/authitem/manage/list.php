@@ -87,7 +87,7 @@
     </div>
 </div>
 <br/>
-<table class="srbacDataGrid">
+<table class="srbacDataGrid table table-bordered">
     <tr>
         <th><?php echo Helper::translate('srbac', 'Name'); ?></th>
         <th><?php echo Helper::translate('srbac', 'Description') ?></th>
