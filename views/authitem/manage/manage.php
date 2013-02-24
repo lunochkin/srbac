@@ -55,7 +55,8 @@
         ),
         array(
             'name' => 'buttonManage',
-            'onclick' => "$(this).css('font-weight', 'bold');$(this).siblings().css('font-weight', 'normal');",
+            'onclick' => "$(this).parent().addClass('active');$(this).parent().siblings().removeClass('active');",
+            'data-toggle' => 'tab'
         )
     );
         ?>
@@ -85,7 +86,7 @@
         ),
         array(
             'name' => 'buttonAuto',
-            'onclick' => "$(this).css('font-weight', 'bold');$(this).siblings().css('font-weight', 'normal');",
+            'onclick' => "$(this).parent().addClass('active');$(this).parent().siblings().removeClass('active');",
             'data-toggle' => 'tab',
         )
     );
@@ -116,7 +117,7 @@
         ),
         array(
             'name' => 'buttonAllowed',
-            'onclick' => "$(this).css('font-weight', 'bold');$(this).siblings().css('font-weight', 'normal');",
+            'onclick' => "$(this).parent().addClass('active');$(this).parent().siblings().removeClass('active');",
             'data-toggle' => 'tab',
         )
     );
@@ -147,7 +148,7 @@
         ),
         array(
             'name' => 'buttonClear',
-            'onclick' => "$(this).css('font-weight', 'bold');$(this).siblings().css('font-weight', 'normal');",
+            'onclick' => "$(this).parent().addClass('active');$(this).parent().siblings().removeClass('active');",
             'data-toggle' => 'tab',
         )
     );
