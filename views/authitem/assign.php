@@ -56,17 +56,18 @@ $this->breadcrumbs = array(
             .addClass("nav")
             .addClass("nav-tabs");
     $("#tabsAssign ul").find("a").attr("data-toggle", "tab");
-    $("#tabsAssign ul").removeClass(".tabs");
+    $("#tabsAssign ul").removeClass("tabs").removeClass('yiiTab');
     $("#tabsAssign div.view")
             .addClass("tab-pane")
             .removeClass("view")
     ;
     $("#tabsAssign div.tab-pane").wrapAll("<div class='tab-content' />");
-    $("#tabsAssign ul li:first a").trigger("click");
 
     $("#tabsAssign ul li a").on("click", function() {
 
         $("#tabsAssign ul li").removeClass("active");
         $(this).closest("li").addClass("active");
     });
+
+    $("#tabsAssign ul li:first a").trigger("click");
 </script>
