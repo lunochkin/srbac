@@ -36,6 +36,7 @@ return array(
     "Not Assigned Roles" => "Не назначенные роли",
     "Install Srbac" => "Установить Srbac",
     "Your Database, AuthManager and srbac settings:" => "Настройки базы данных, AuthManager и srbac",
+    "No authItems that don't belong to a controller were found" => "Элементы авторизации, непринадлежащие какому-либо контроллеру, не найдены",
     "Database" => "База данных",
     "Driver" => "Драйвер",
     "Connection" => "Соединение",
