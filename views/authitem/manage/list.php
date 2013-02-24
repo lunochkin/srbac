@@ -29,30 +29,25 @@
 </div>
 <?php endif; ?>
 <?php echo SHtml::beginForm(); ?>
-<div class="controlPanel">
-    <div class="iconBox">
-        <?php
-        echo SHtml::ajaxLink(
-            SHtml::image($this->module->getIconsPath() . '/create.png',
-                Helper::translate('srbac', 'Create'),
-                array('border' => 0,
-                    'class' => 'icon', 'title' => Helper::translate('srbac', 'Create'),
-                    'border' => 0
-                )
-            ) . Helper::translate('srbac', 'Create'),
-            array('create'),
-            array(
-                'type' => 'POST',
-                'update' => '#preview',
-                'beforeSend' => 'function(){
-                                  $("#preview").addClass("srbacLoading");
-                              }',
-                'complete' => 'function(){
-                                  $("#preview").removeClass("srbacLoading");
-                              }',
-            )
-        ); ?>
-    </div>
+<div>
+    <?php
+    echo SHtml::ajaxLink(
+        Helper::translate('srbac', 'Create'),
+        array('create'),
+        array(
+            'type' => 'POST',
+            'update' => '#preview',
+            'beforeSend' => 'function(){
+                              $("#preview").addClass("srbacLoading");
+                          }',
+            'complete' => 'function(){
+                              $("#preview").removeClass("srbacLoading");
+                          }',
+        ),
+        array(
+            'class' => 'btn'
+        )
+    ); ?>
     <div style="margin: 0px">
         <?php
         echo Helper::translate('srbac', 'Search') . ': &nbsp; ';

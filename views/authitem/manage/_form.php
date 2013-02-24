@@ -85,7 +85,7 @@
                         array(
                             'type' => 'POST',
                             'update' => '#preview'
-                        ), array('name' => 'saveButton2'));
+                        ), array('name' => 'saveButton2', 'class' => 'btn'));
                     ?>
                 </div>
             </td>
