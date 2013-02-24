@@ -61,24 +61,6 @@
                 'htmlOptions' => array('class' => 'search'),
             )
         ); ?>
-        <?php
-        echo SHtml::htmlButton('Поиск',
-            array(
-                'ajax' => array(
-                    'type' => 'POST', 'url' => array('list'), 'update' => '#list',
-                    'beforeSend' => 'function(){
-                                      $("#list").addClass("srbacLoading");
-                                  }',
-                    'complete' => 'function(){
-                                      $("#list").removeClass("srbacLoading");
-                                  }',
-                ),
-                'type' => 'submit',
-                'style' => 'float: right;',
-                'class' => 'btn',
-            )
-        );
-        ?>
     </div>
 </div>
 <br/>
