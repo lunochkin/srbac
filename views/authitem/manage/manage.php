@@ -159,10 +159,13 @@
 <?php } ?>
 <div id="wizard">
     <table class="srbacDataGrid table table-bordered" align="center">
+        <thead>
         <tr>
             <th width="50%"><?php echo Helper::translate("srbac", "Auth items");?></th>
             <th><?php echo Helper::translate('srbac', 'Actions')?></th>
         </tr>
+        </thead>
+        <tbody>
         <tr>
             <td style="vertical-align: top;text-align: center">
                 <div id="list">
@@ -179,6 +182,7 @@
                 </div>
             </td>
         </tr>
+        </tbody>
     </table>
 </div>
 <?php if (!$full) {
