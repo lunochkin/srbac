@@ -26,6 +26,7 @@ $this->widget('system.web.widgets.CTabView',
     )
 );
 ?>
+<br>
 <div class="action">
     <?php echo SHtml::ajaxSubmitButton(Helper::translate("srbac", "Save"),
     array('saveAllowed'),
@@ -41,6 +42,7 @@ $this->widget('system.web.widgets.CTabView',
     ),
     array(
         'name' => 'buttonSave',
+        'class' => 'btn',
     )
 )
     ?>

@@ -35,18 +35,34 @@ $this->breadcrumbs = array(
         ),
     );
     ?>
-    <div class="horTab">
-        <?php
-        Helper::publishCss($this->module->css);
-        $this->widget('system.web.widgets.CTabView',
-            array('tabs' => $tabs,
-                'viewData' => array('model' => $model, 'userid' => $userid, 'message' => $message, 'data' => $data),
-                'cssFile' => $this->module->getCssUrl(),
-            ));
-        ?>
+    <div id='tabsAssign'>
+    <?php
+    Helper::publishCss($this->module->css);
+    $this->widget('system.web.widgets.CTabView',
+        array('tabs' => $tabs,
+            'viewData' => array('model' => $model, 'userid' => $userid, 'message' => $message, 'data' => $data),
+            'cssFile' => $this->module->getCssUrl(),
+        ));
+    ?>
     </div>
 </div>
 <?php if ($this->module->getShowFooter()) {
     $this->renderPartial($this->module->footer);
 }
 ?>
+
+<script type="text/javascript">
+    $("#tabsAssign ul.tabs")
+            .addClass("nav")
+            .addClass("nav-tabs");
+    $("#tabsAssign ul.tabs").find("a").attr("data-toggle", "tab");
+    $("#tabsAssign div.view").addClass("tab-pane");
+    $("#tabsAssign div.view").wrapAll("<div class='tab-content' />")
+    $("#tabsAssign ul li:first a").trigger("click");
+
+    $("#tabsAssign ul li a").on("click", function() {
+
+        $("#tabsAssign ul li").removeClass("active");
+        $(this).closest("li").addClass("active");
+    });
+</script>
