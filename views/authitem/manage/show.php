@@ -28,19 +28,19 @@
 
 <table class="srbacDataGrid table table-bordered">
   <tr>
-    <th class="label"><?php echo SHtml::encode($model->getAttributeLabel('type')); ?></th>
+    <th><?php echo SHtml::encode($model->getAttributeLabel('type')); ?></th>
     <td><?php echo SHtml::encode(AuthItem::typeById($model->type)); ?></td>
   </tr>
   <tr>
-    <th class="label"><?php echo SHtml::encode($model->getAttributeLabel('description')); ?></th>
+    <th><?php echo SHtml::encode($model->getAttributeLabel('description')); ?></th>
     <td><?php echo SHtml::encode($model->description); ?></td>
   </tr>
   <tr>
-    <th class="label"><?php echo SHtml::encode($model->getAttributeLabel('bizrule')); ?></th>
+    <th><?php echo SHtml::encode($model->getAttributeLabel('bizrule')); ?></th>
     <td><?php echo SHtml::encode($model->bizrule); ?></td>
   </tr>
   <tr>
-    <th class="label"><?php echo SHtml::encode($model->getAttributeLabel('data')); ?></th>
+    <th><?php echo SHtml::encode($model->getAttributeLabel('data')); ?></th>
     <td><?php echo SHtml::encode($model->data); ?></td>
   </tr>
 </table>
