@@ -46,7 +46,13 @@ $this->widget('system.web.widgets.CTabView',
     ?>
 </div>
 <?php echo SHtml::endForm(); ?>
-<!--Adjust tabview height--->
+
+<style>
+    .tabbable.tabs-left .tab-content {
+        min-height: 339px;
+    }
+</style>
+
 <script type="text/javascript">
 
     $(".tabbable.tabs-left ul.tabs")
