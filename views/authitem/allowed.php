@@ -54,4 +54,5 @@ $this->widget('system.web.widgets.CTabView',
             .addClass("nav-tabs");
     $(".tabbable.tabs-left ul.tabs").find("a").attr("data-toggle", "tab");
     $(".tabbable.tabs-left div.view").addClass("tab-pane");
+    $(".tabbable.tabs-left div.view").wrapAll("<div class='tab-content' />")
 </script>
