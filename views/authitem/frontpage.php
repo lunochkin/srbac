@@ -8,7 +8,7 @@ $this->menu = array(
             'border' => 0
         )
     ) . " " . ($this->module->iconText ? Helper::translate('srbac', 'Managing auth items') : ""),
-        'url' => array('authitem/manage')
+        'url' => array('manage')
     ),
     array('label' => SHtml::image($this->module->getIconsPath() . '/usersAssign.png',
         Helper::translate('srbac', 'Assign to users'),
@@ -17,7 +17,7 @@ $this->menu = array(
             'border' => 0,
         )
     ) . " " . ($this->module->iconText ? Helper::translate('srbac', 'Assign to users') : ""),
-        'url' => array('authitem/assign')
+        'url' => array('assign')
     ),
     array(
         'label' => SHtml::image($this->module->getIconsPath() . '/users.png',
@@ -27,6 +27,6 @@ $this->menu = array(
                 'border' => 0
             )
         ) . " " . ($this->module->iconText ? Helper::translate('srbac', 'User\'s assignments') : ""),
-        'url' => array('authitem/assignments')
+        'url' => array('assignments')
     ),
 );
