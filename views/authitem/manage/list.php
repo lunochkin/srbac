@@ -45,7 +45,7 @@
                           }',
         ),
         array(
-            'class' => 'btn'
+            'class' => 'btn', 'style' => 'float: left;'
         )
     ); ?>
     <div style="margin: 0px">
@@ -62,11 +62,8 @@
             )
         ); ?>
         <?php
-        echo SHtml::imageButton($this->module->getIconsPath() . '/preview.png',
+        echo SHtml::htmlButton('Поиск',
             array(
-                'border' => 0,
-                'title' => Helper::translate('srbac', 'Search'),
-                'live' => false,
                 'ajax' => array(
                     'type' => 'POST', 'url' => array('list'), 'update' => '#list',
                     'beforeSend' => 'function(){
@@ -75,7 +72,8 @@
                     'complete' => 'function(){
                                       $("#list").removeClass("srbacLoading");
                                   }',
-                )
+                ),
+                'type' => 'submit',
             )
         );
         ?>
