@@ -52,10 +52,11 @@ $this->breadcrumbs = array(
 ?>
 
 <script type="text/javascript">
-    $("#tabsAssign ul.tabs")
+    $("#tabsAssign ul")
             .addClass("nav")
             .addClass("nav-tabs");
-    $("#tabsAssign ul.tabs").find("a").attr("data-toggle", "tab");
+    $("#tabsAssign ul").find("a").attr("data-toggle", "tab");
+    $("#tabsAssign ul").removeClass(".tabs");
     $("#tabsAssign div.view").addClass("tab-pane");
     $("#tabsAssign div.view").wrapAll("<div class='tab-content' />")
     $("#tabsAssign ul li:first a").trigger("click");
