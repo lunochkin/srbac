@@ -96,7 +96,7 @@
         </table>
       </td>
       <td width="60%"  style="vertical-align: top">
-        <table class="srbacDataGrid" width="50%" style="float:left">
+        <table class="table table-bordered" width="50%" style="float:left">
           <tr>
             <th width="70%"><?php echo Helper::translate('srbac','Auth items')?></th>
           </tr>
