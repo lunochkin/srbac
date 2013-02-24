@@ -26,7 +26,7 @@
 <?php else : ?>
 <h2><?php echo $model->name; ?></h2>
 
-<table class="srbacDataGrid">
+<table class="srbacDataGrid table table-bordered">
   <tr>
     <th class="label"><?php echo SHtml::encode($model->getAttributeLabel('type')); ?></th>
     <td><?php echo SHtml::encode(AuthItem::typeById($model->type)); ?></td>
