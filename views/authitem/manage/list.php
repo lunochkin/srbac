@@ -50,7 +50,6 @@
     ); ?>
     <div style="margin: 0px">
         <?php
-        echo Helper::translate('srbac', 'Search') . ': &nbsp; ';
         $this->widget('CAutoComplete',
             array(
                 'name' => 'name',
@@ -59,9 +58,7 @@
                 'matchCase' => false,
                 'url' => array('autocomplete'),
                 'minChars' => 2,
-            ),
-            array(
-                'class' => 'search'
+                'htmlOptions' => array('class' => 'search'),
             )
         ); ?>
         <?php
