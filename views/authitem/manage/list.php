@@ -186,6 +186,7 @@
             'class' => 'pagination',
         ),
         'selectedPageCssClass' => 'active',
+        'header' => '',
     ));
     ?>
 </div>
