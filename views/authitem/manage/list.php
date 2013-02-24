@@ -185,6 +185,7 @@
         'htmlOptions' => array(
             'class' => 'pagination',
         ),
+        'selectedPageCssClass' => 'active',
     ));
     ?>
 </div>
