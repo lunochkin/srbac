@@ -59,6 +59,9 @@
                 'matchCase' => false,
                 'url' => array('autocomplete'),
                 'minChars' => 2,
+            ),
+            array(
+                'class' => 'search'
             )
         ); ?>
         <?php
@@ -74,6 +77,8 @@
                                   }',
                 ),
                 'type' => 'submit',
+                'style' => 'float: right;',
+                'class' => 'btn',
             )
         );
         ?>
