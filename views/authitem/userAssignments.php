@@ -16,7 +16,7 @@
  ?>
 <br />
 <h1><?php echo Helper::translate('srbac','Assignments of user')?>: '<?php echo $username?>'</h1>
-<table class="srbacDataGrid" width="100%">
+<table class="table table-bordered" width="100%">
   <tr>
     <th class="roles"><?php echo Helper::translate('srbac','Roles')?></th>
     <th class="tasks"><?php echo Helper::translate('srbac','Tasks')?></th>
@@ -24,16 +24,16 @@
   </tr>
   <tr>
     <td valign="top" colspan="3">
-      <table class="roles">
+      <table class="roles table table-bordered">
         <?php foreach ($data as $i=>$roles) { ?>
         <tr>
           <td><b><?php echo $i ?></b>
               <?php foreach ($roles as $j=>$tasks) { ?>
-            <table class="tasks">
+            <table class="tasks table table-bordered">
               <tr>
                 <td valign="top">
                       <?php echo $j; ?>
-                  <table class="operations">
+                  <table class="operations table table-bordered">
                     <tr>
                       <td valign="top">
                       <?php foreach ($tasks as $j=>$opers) { ?>
