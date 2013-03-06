@@ -1,3 +1,8 @@
-<?php
- return array();
+<?php 
+ return array(
+	'SiteError',
+	'SiteLogin',
+	'SiteLogout',
+	'ApiIndex'
+);
 ?>
